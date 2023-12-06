@@ -1,0 +1,139 @@
+/* 769 이상 1200 이하 */
+@media (min-width: 769px) and (max-width: 1200px) {
+  /* bobyWrap */
+  .bodyWrap {
+    display: block;
+  }
+
+  /* header */
+  header {
+    width: 100%;
+    height: 80px;
+    z-index: 99;
+    user-select: none;
+  }
+  header .inner {
+    height: 100%;
+    display: flex;
+  }
+  header .nav h4 {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  header .nav {
+    display: none;
+  }
+  header .siteNav {
+    width: 50%;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  header .siteNav h4 {
+    line-height: 80px;
+  }
+  header .siteNav h4 span {
+    transform: rotate(180deg);
+  }
+  header .siteNav h4 span.on {
+    transform: rotate(0deg);
+  }
+
+  /* content */
+  .content {
+    width: 100%;
+  }
+}
+
+/* ***************************************  */
+
+/* 768 이상 */
+@media (max-width: 768px) {
+  /* bobyWrap */
+  .bodyWrap {
+    display: block;
+  }
+
+  /* header */
+  header {
+    width: 100%;
+    height: 80px;
+    z-index: 99;
+    user-select: none;
+  }
+  header .inner {
+    height: 100%;
+    display: flex;
+  }
+  header .nav h4 {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  header .nav {
+    display: none;
+  }
+  header .siteNav {
+    width: 50%;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  header .siteNav h4 {
+    line-height: 80px;
+  }
+  header .siteNav h4 span {
+    transform: rotate(180deg);
+  }
+  header .siteNav h4 span.on {
+    transform: rotate(0deg);
+  }
+
+  /* content */
+  .content {
+    width: 100%;
+  }
+
+  /* visual */
+  #visual .bgBlue h4 {
+    font-size: 1.5rem;
+  }
+  #visual .bgBlue .bottom h4 {
+    margin-bottom: 10px;
+  }
+
+  /* con1 */
+  #con1 .slideWrap {
+    display: block;
+  }
+  #con1 .slideNav {
+    width: 100%;
+  }
+  #con1 .slides {
+    width: 100%;
+  }
+  #con1 .slides .image li {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  #con1 .slides .image .text p {
+    display: none;
+  }
+
+  /* con3 */
+  #con3 h4 {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    line-height: normal;
+    word-break: keep-all;
+  }
+
+  /* footer */
+  #footer .inner {
+    display: block;
+  }
+}

@@ -1,0 +1,253 @@
+/* 769 이상 1200 이하 */
+@media (min-width: 769px) and (max-width: 1200px) {
+  /* bobyWrap */
+  .bodyWrap {
+    display: block;
+  }
+
+  /* header */
+  header {
+    width: 100%;
+    height: 80px;
+    z-index: 99;
+    user-select: none;
+  }
+  header .inner {
+    height: 100%;
+    display: flex;
+  }
+  header .nav h4 {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  header .nav {
+    display: none;
+  }
+  header .siteNav {
+    width: 50%;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  header .siteNav h4 {
+    line-height: 80px;
+  }
+  header .siteNav h4 span {
+    transform: rotate(180deg);
+  }
+  header .siteNav h4 span.on {
+    transform: rotate(0deg);
+  }
+
+  /* content */
+  .content {
+    width: 100%;
+  }
+
+  /* banner */
+  .content .banner .white_txt {
+    display: none;
+  }
+
+  /* bg_blue */
+  .content .banner .bg_blue {
+    width: calc(100% + 230px);
+    height: 150%;
+    background: #145ba6;
+    align-items: center;
+    padding: 20px 100px;
+
+    transform: rotate(0deg) translateX(-50px);
+    transform-origin: center;
+  }
+  .content .banner.on .bg_blue {
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    transform: rotate(0deg) translateX(-50px);
+  }
+
+  /* con1 */
+  #con1 .inner {
+    flex-direction: column;
+  }
+  #con1 .inner .bgBlue {
+    display: none;
+  }
+
+  /* con2 */
+  #con2 .inner {
+    padding: 0px 20px;
+  }
+  #con2 .inner .title h4 {
+    font-size: 1.5rem;
+  }
+  #con2 .inner .slideWrap {
+    display: block;
+  }
+
+  /* con3 */
+  #con3 .inner {
+    padding: 0px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #con3 .inner .bgBlue {
+    display: none;
+  }
+}
+
+/* *************************************** */
+
+/* 768 이상 */
+@media (max-width: 768px) {
+  /* bobyWrap */
+  .bodyWrap {
+    display: block;
+  }
+
+  /* header */
+  header {
+    width: 100%;
+    height: 80px;
+    z-index: 99;
+    user-select: none;
+  }
+  header .inner {
+    height: 100%;
+    display: flex;
+  }
+  header .nav h4 {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  header .nav {
+    display: none;
+  }
+  header .siteNav {
+    width: 50%;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  header .siteNav h4 {
+    line-height: 80px;
+  }
+  header .siteNav h4 span {
+    transform: rotate(180deg);
+  }
+  header .siteNav h4 span.on {
+    transform: rotate(0deg);
+  }
+
+  /* content */
+  .content {
+    width: 100%;
+  }
+
+  /* banner */
+  .content .banner .white_txt {
+    display: none;
+  }
+
+  /* bg_blue */
+  .content .banner .bg_blue {
+    width: 100%;
+    height: 100%;
+    background: #145ba6;
+    display: flex;
+    align-items: center;
+    padding: 20px 100px;
+
+    transform: rotate(0deg) translateX(0px);
+    transform-origin: center;
+  }
+  .content .banner.on .bg_blue {
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    transform: rotate(0deg) translateX(0px);
+  }
+  .content .banner .text h4 {
+    font-size: 2rem;
+    line-height: 5rem;
+  }
+  .content .banner .text .line_yellow {
+    width: 100%;
+  }
+
+  /* con1 */
+  #con1 .inner {
+    flex-direction: column;
+  }
+  #con1 .inner img {
+    width: 100%;
+    padding: 20px;
+  }
+  #con1 .inner .text h4 {
+    font-size: 1.3rem;
+  }
+  #con1 .inner .text p {
+    font-size: 0.8rem;
+  }
+  #con1 .inner .bgBlue {
+    display: none;
+  }
+
+  /* con2 */
+  #con2 .inner {
+    padding: 0px 20px;
+  }
+  #con2 .inner .title h4 {
+    font-size: 1.5rem;
+  }
+  #con2 .inner .slideWrap {
+    display: block;
+  }
+
+  /* con3 */
+  #con3 .inner {
+    padding: 0px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  #con3 .inner img {
+    width: 100%;
+  }
+  #con3 .inner .bgBlue {
+    display: none;
+  }
+
+  /* con4 */
+  #con4 .inner .top_list {
+    display: none;
+  }
+  #con4 .inner .con4_listWrap .con3_img {
+    display: none;
+  }
+  #con4 .inner .con4_listWrap .con4_list {
+    width: 100%;
+  }
+  #con4 .inner .con4_listWrap .con4_list li {
+    height: 60px;
+  }
+  #con4 .inner .con4_listWrap .con4_list li h4 {
+    padding: 0px 15px;
+    gap: 10px;
+    word-break: keep-all;
+  }
+
+  /* con5 */
+  #con5 {
+    padding: 150px 0px;
+  }
+  #con5 .inner .ingvar_talk li {
+    padding: 25px;
+  }
+
+  /* footer */
+  #footer .inner {
+    display: block;
+  }
+}
