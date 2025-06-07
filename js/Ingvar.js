@@ -8,6 +8,29 @@ $(function () {
     $(this).addClass("on");
   });
 
+   // con 도착하면 해당 컨텐츠와 같은 nav li에 addClass
+  let conList = $(".con");
+  let conList_top = new Array();
+
+  conList.each((idx, con) => {
+    let conTop = con.offsetTop;
+    conList_top.push(conTop);
+  });
+  window.addEventListener("scroll", function () {
+    let currentScroll = parseInt(window.scrollY) + ($(window).height() / 2);
+
+    if (currentScroll > conList_top[0] && currentScroll < conList_top[1]) {
+      $("#header .nav li").removeClass("on");
+      $("#header .nav li").eq(0).addClass("on");
+    }else if(currentScroll > conList_top[1] && currentScroll < conList_top[2]){
+      $("#header .nav li").removeClass("on");
+      $("#header .nav li").eq(1).addClass("on");
+    }else if(currentScroll > conList_top[2]){
+      $("#header .nav li").removeClass("on");
+      $("#header .nav li").eq(2).addClass("on");
+    }
+  });
+
   //siteNav
   let nav_btn = 0;
   $("#header .siteNav h4").click(function () {

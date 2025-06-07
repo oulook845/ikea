@@ -8,6 +8,8 @@ $(function () {
     $(this).addClass("on");
   });
 
+  
+  // con 도착하면 해당 컨텐츠와 같은 nav li에 addClass
   let conList = $(".con");
   let conList_top = new Array();
 
@@ -15,7 +17,6 @@ $(function () {
     let conTop = con.offsetTop;
     conList_top.push(conTop);
   });
-
   window.addEventListener("scroll", function () {
     let currentScroll = parseInt(window.scrollY) + ($(window).height() / 2);
 
